@@ -12,10 +12,11 @@ int main(int argc, char **argv) { // main function
 	if (argc>1) { // if there are arguments, print those
 		for (int i=1; i<argc; i++) {
 			printf("%s ",argv[i]);
-		} printf("\n"); // add new line since arguments will not have it by default
+		} 
+		printf("\n"); // add new line since arguments will not usually have it by default
 	} else { // else use stdin
 		char *input = read_stdin();
-		printf("%s\n",input);
+		printf("%s",input);
 	}
 	return 0;
 }
