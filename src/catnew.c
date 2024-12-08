@@ -5,7 +5,6 @@ int main(int argc, char **argv) { // main function
 	for (int i=1; i<argc; i++) {
 		FILE *file;
 		if (file = fopen(*(argv+i), "r")) { // if file exists, read data
-			file = fopen(*(argv+i), "r");
 			char ch;
 			while ((ch = fgetc(file)) != EOF) {
 				putchar(ch);
