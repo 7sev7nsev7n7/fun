@@ -14,4 +14,5 @@ int main(int argc, char **argv) { // main function
 			fprintf(stderr, "catnew: %s: No such file or directory\n", *(argv+i));
 		}
 	}
+	return 0;
 }
